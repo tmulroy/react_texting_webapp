@@ -6,7 +6,7 @@
   The user must register/login and can add different contacts by entering
   phone numbers.
 ## Technologies Used:
-  React.js
-  HTML/CSS
-  Firebase
-  Twilio
+* React.js
+* HTML/CSS
+* Firebase
+* Twilio
