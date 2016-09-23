@@ -2,6 +2,7 @@ import React from 'react';
 import Contact from './Contact.jsx';
 import NewContactModal from './NewContactModal.jsx';
 import request from 'superagent';
+import firebase from '../../firebase.config.js';
 
 export default class ContactList extends React.Component {
   constructor(props) {
@@ -19,8 +20,8 @@ export default class ContactList extends React.Component {
   closeModal() {
     this.setState({ modalOpen: false });
   }
-  addNewContact({ name, number }) {
-    //needs to get key of current user to pass into url!!
+  addNewContact({ name, number}) {
+    //as params?? ie /users/:id
     const url = 'https://react-sms-webapp.firebaseio.com/users/6CJ4cAdy4WebpoTIZ5n6rWqr50u2/contacts.json';
     request.post(url)
         .send({name: name, phoneNumber: number})

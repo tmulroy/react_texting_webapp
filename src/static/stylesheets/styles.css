@@ -127,7 +127,7 @@ input {
 
 #new-message-button {
   position: relative;
-  background: green;
+  background: rgba(39, 174, 96,1.0);
   color: white;
   height: 4.7rem;
   width: 9.6%;
