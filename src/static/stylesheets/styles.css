@@ -1,5 +1,8 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
 #main-nav {
-  background-color: cornflowerblue;
+  background-color: rgba(52, 73, 94,1.0);
   color: white;
   position: absolute;
   top: 0;
@@ -7,6 +10,7 @@
   width: 100%;
   text-align: center;
   margin-bottom: 0rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -69,6 +73,8 @@ input {
   border: 3px solid black;
   margin-bottom: 0;
   font-size: 200%;
+  overflow-y: auto;
+
 }
 
 #conversation {
@@ -81,7 +87,7 @@ input {
 }
 #contact {
   position: relative;
-  height: 6%;
+  height: 10%;
   width: 99%;
   border: 1px solid red;
 }
@@ -106,5 +112,50 @@ input {
 
 #new-message {
   position: relative;
-  
+  height: 9.5%;
+  width: 99.7%;
+  left: 0.2%;
+  border: 1px solid blue;
+}
+
+#new-message-input {
+  position: relative;
+  float: left;
+  height: 3.5rem;
+  width: 90.05%;
+}
+
+#new-message-button {
+  position: relative;
+  background: green;
+  color: white;
+  height: 4.7rem;
+  width: 9.6%;
+  font-size: 175%;
+}
+
+#new-contact {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 6%;
+  width: 50%;
+  font-size: 70%;
+}
+#edit-contact {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 6%;
+  width: 50%;
+  font-size: 70%;
+}
+#new-contact-modal {
+  background: lightgrey;
 }
