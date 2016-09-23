@@ -1,0 +1,110 @@
+#main-nav {
+  background-color: cornflowerblue;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-content {
+  position: absolute;
+  padding-top: 2rem;
+  text-align: center;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#login {
+  position: absolute;
+  top: 1rem;
+  right: 5.7rem;
+}
+
+#register {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+#sign-out {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+input {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  color: white;
+  background-color: cornflowerblue;
+  height: 2rem;
+  width: 9rem;
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+
+#contact-list {
+  position: absolute;
+  left: 10%;
+  height: 70%;
+  width: 20%;
+  border: 3px solid black;
+  margin-bottom: 0;
+  font-size: 200%;
+}
+
+#conversation {
+  position: absolute;
+  left: 30%;
+  height: 70%;
+  width: 60%;
+  border: 3px solid black;
+  margin-bottom: 0;
+}
+#contact {
+  position: relative;
+  height: 6%;
+  width: 99%;
+  border: 1px solid red;
+}
+
+#received-message-list {
+  position: relative;
+  float: left;
+  left: 0.2%;
+  height: 90%;
+  width: 50%;
+  border: 1px solid lightgrey;
+  font-size: 150%;
+}
+#sent-message-list {
+  position: relative;
+  left: 50.5%;
+  height: 90%;
+  width: 49.5%;
+  border: 1px solid purple;
+  font-size: 150%;
+}
+
+#new-message {
+  position: relative;
+  
+}
