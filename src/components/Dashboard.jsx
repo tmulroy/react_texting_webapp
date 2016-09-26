@@ -28,6 +28,14 @@ class Dashboard extends React.Component {
         }
       })
   }
+  handleReceivedMessageRefresh() {
+    const currentUserID = firebase.auth().currentUser.uid;
+    const url = `https://react-sms-webapp.firebaseio.com/users/${currentUserID}/contacts/${this.state.contactID}/sentMessages.json`;
+    request.get(url)
+      .end((err,response) => {
+          this.setState({ sentMessages: response.body })
+      })
+  }
   setContactName(number, id){
     const currentUserID = firebase.auth().currentUser.uid;
     const urlName = `https://react-sms-webapp.firebaseio.com/users/${currentUserID}/contacts/${id}.json`;
@@ -57,7 +65,7 @@ class Dashboard extends React.Component {
           request.get(urlName)
             .end((err,res) => {
               this.setState({ currentContactName: res.body })
-              alert(`Successfully sent message to ${res.body}!`)
+              this.handleReceivedMessageRefresh();
             });
       });
     };

@@ -8,16 +8,6 @@ const propTypes = {
   handleSendMessageButton: React.PropTypes.func,
 }
 const Conversation = ({ sentMessages, handleSendMessageButton }) => {
-    if ( !sentMessages ) {
-      return (
-        <div id="conversation">
-          <ReceivedMessageList />
-          <SentMessageList/>
-          <NewMessage
-            handleSendMessageButton={handleSendMessageButton}/>
-        </div>
-      )
-    }
     return (
       <div id="conversation">
         <ReceivedMessageList />

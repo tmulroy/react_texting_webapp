@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Message = () => {
+const propTypes = {
+  messageText: React.PropTypes.string,
+}
+const Message = ({ messageText }) => {
   return(
-    <div id="message">
-      hello
+    <div className="message">
+        {messageText}
     </div>
   )
 }

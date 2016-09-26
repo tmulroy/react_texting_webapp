@@ -91,7 +91,7 @@ export default class ContactList extends React.Component {
         return (
           <div id="contact-list">
             <button id="new-contact-button" onClick={this.changeModalState}>Add Contact</button>
-            <button id="edit-contact-button" onClick={this.handleEditContactButtonClick}>Edit Contact</button>
+            <button id="edit-contact-button" onClick={this.handleEditContactButtonClick}>Delete Contact</button>
             { this.state.modalOpen ? <NewContactModal addNewContact={this.addNewContact} /> : false}
             {contactElements}
             {this.getContacts()}
