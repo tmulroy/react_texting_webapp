@@ -89,7 +89,12 @@ input {
   position: relative;
   height: 10%;
   width: 99%;
-  border: 1px solid red;
+  border: 1px solid lightgrey;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
 }
 
 #received-message-list {
@@ -134,28 +139,50 @@ input {
   font-size: 175%;
 }
 
-#new-contact {
+#new-contact-button {
   position: relative;
   display: inline-block;
   top: 0px;
   left: 0;
-  margin: 0;
-  padding: 0;
   height: 6%;
   width: 50%;
   font-size: 70%;
 }
-#edit-contact {
+#edit-contact-button {
   position: relative;
   display: inline-block;
   top: 0px;
   left: 0;
-  margin: 0;
-  padding: 0;
   height: 6%;
   width: 50%;
   font-size: 70%;
 }
 #new-contact-modal {
   background: lightgrey;
+}
+
+#edit-contact {
+  position: relative;
+  height: 10%;
+  width: 70%;
+}
+
+#delete-button {
+  position: relative;
+  float: right;
+  top: 0;
+  height: 80%;
+  width: 20%;
+  background: red;
+  font-size: 150%;
+  text-align: center;
+  color: white;
+}
+
+#message {
+  position: relative;
+  height: 10%;
+  width: 99%;
+  background: rgba(46, 204, 113,0.5);
+  color: white;
 }
