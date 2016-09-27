@@ -91,6 +91,7 @@ input {
   width: 99%;
   border: 1px solid lightgrey;
   text-align: center;
+  line-height: 225%;
   vertical-align: middle;
   cursor: default;
   -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -106,6 +107,7 @@ input {
   width: 50%;
   border: 1px solid lightgrey;
   font-size: 150%;
+  overflow-y: auto;
 }
 #sent-message-list {
   float: right;
@@ -187,10 +189,30 @@ input {
   height: 15%;
   width: 100%;
   background: rgba(46, 204, 113,0.5);
-  color: black;
+  color: white;
   font-size: 250%;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
   text-align: center;
+  vertical-align: middle;
+  line-height: 300%;
+  font-size: 2rem;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  cursor: default;
+}
+
+.received-message {
+  position: relative;
+  height: 15%;
+  width: 100%;
+  background: rgba(189, 195, 199,0.5);
+  color: white;
+  font-size: 250%;
+  margin-top: 20%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250%;
   font-size: 2rem;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */

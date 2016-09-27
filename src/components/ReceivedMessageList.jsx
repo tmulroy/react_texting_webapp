@@ -1,9 +1,11 @@
 import React from 'react'
-
+import ReceivedMessage from './ReceivedMessage.jsx';
 const ReceivedMessageList = () => {
   return (
     <div id="received-message-list">
-      Hello from ReceivedMessageList!
+      <ReceivedMessage />
+      <ReceivedMessage />
+      <ReceivedMessage /> 
     </div>
   )
 }
